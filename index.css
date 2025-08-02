@@ -213,81 +213,149 @@ span{
     flex-wrap: wrap;
     gap: 2rem;
 }
-.project-container .project-box{
-    flex:1 1 30rem;
-    background:var(--snd-bg-color);
+.project-container .project-box {
+    flex: 1 1 30rem;
+    background: var(--snd-bg-color);
     padding: 6rem 2rem 6rem;
     border-radius: 2rem;
     text-align: center;
     border: 0.3rem solid var(--bg-color);
     transition: 0.3s ease;
+    height: 550px; /* atur sesuai kebutuhan */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
 .project-container .project-box:hover{
     border-color: var(--main-color);
     transform: scale(1.03);
+}
+.project-container .project-box img{
+    width: 100%;
+    height: 50%;
+    margin-bottom: 50px;
 }
 .project-box i{
     font-size: 7rem;
     color: var(--main-color);
 }
-.skill-container {
-    max-width: 800px;
-    margin: auto;
-    padding: 2rem;
+.project-box p{
+    font-size: 1.5rem;
+}
+.skills {
+  width: 100%;
+  margin: 10 5 0 0;
+  background-color: var(--snd-bg-color);
+
+}
+.skills h1{
+    text-align: center;
+    font-size:6rem;
+}
+.skills h2 {
+  font-weight: 400;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: var(--main-color);
 }
 
-.skill-box {
-    margin-bottom: 1.5rem;
+/* Container bar */
+.proggres-bar {
+  background: white;
+  width: 100%;
+  height: 15px;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid black;
 }
 
-.info span {
-    font-weight: 600;
-    font-size: 1.1rem;
-    display: block;
-    margin-bottom: 0.3rem;
+/* Inner bar */
+.proggres-bar .bar {
+  height: 100%;
+  border-radius: 5px;
+  position: relative;
+  background: var(--main-color);
+  transition: width 0.6s ease;
 }
 
-.progres-bar {
-    background-color: #e0e0e0;
-    border-radius: 25px;
-    overflow: hidden;
-    height: 20px;
+/* Bulatan nilai persen */
+.bar span {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%);
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: grey;
+  color: var(--text-color);
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+.html   { width: 50%; background-color: #f16529; }
+.css    { width: 30%; background-color: #2965f1; }
+.js     { width: 30%; background-color: #f7df1e; color: #000; }
+.php    { width: 70%; background-color: #8892be; }
+.flutter{ width: 20%; background-color: #42a5f5; }
+.contact-section {
+  padding: 50px 20px;
+  background: #ffffff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
 
-.progres-bar span {
-    display: block;
-    height: 100%;
-    background-color: var(--main-color);
-    width: 0;
-    border-radius: 25px;
-    animation: fillBar 2s ease forwards;
+.container {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
 }
 
-/* Animasi isi progres */
-@keyframes fillBar {
-    0% {
-        width: 0;
-    }
+.contact-section h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #007f73;
 }
 
-/* Nilai progress */
-.html {
-    width: 90%;
-    background-color: var(--main-color);
+.contact-section p {
+  margin-bottom: 30px;
+  color: #666;
 }
 
-.css {
-    width: 85%;
-    background-color: var(--main-color);
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.contact-section .container p{
+    font-size:1.5rem ;
 }
 
-.javascript {
-    width: 75%;
-    background-color: var(--main-color);
-    color: #000;
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  resize: vertical;
 }
 
-.php {
-    width: 80%;
-    background-color: #8892be   ;
+.contact-form button {
+  padding: 12px;
+  background-color: #007f73;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
 }
+
+.contact-form button:hover {
+  background-color: #005f57;
+}
+
+

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="index.css">
+  <title>Project-tiketin</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #e6f8f6;
+    }
+
+    .keterangan {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 60px 20px;
+    }
+
+    .keterangan-box {
+      max-width: 900px;
+      background-color: #d1f0ed;
+      border: 2px solid #71c9b9;
+      border-radius: 20px;
+      box-shadow: 0 8px 16px rgba(0, 128, 128, 0.1);
+      padding: 40px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .keterangan-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 24px rgba(0, 128, 128, 0.2);
+    }
+
+    .keterangan-box img {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      border-radius: 16px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .keterangan-box i {
+      font-size: 48px;
+      color: #3fb9a4;
+      margin-bottom: 10px;
+      display: inline-block;
+    }
+
+    .keterangan-box h3 {
+      font-size: 28px;
+      color: #247f73;
+      margin-bottom: 16px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    .keterangan-box p {
+      font-size: 16px;
+      line-height: 1.8;
+      color: #2c4f4c;
+      text-align: justify;
+    }
+  </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#home" class="logo remove-underline-bug">Muhammad Yassir Rajwa</a>
+        <nav class="navbar">
+            <a class="remove-underline-bug" href="index.html">Home</a>
+            <a class="remove-underline-bug" href="index.html#about">About</a>
+            <a class="remove-underline-bug" href="index.html#project">Project</a>
+            <a class="remove-underline-bug" href="index.html#skill">Skill</a>
+            <a class="remove-underline-bug" href="index.html#contact">Contact</a>
+        </nav>
+    </header>
+  <div class="keterangan">
+    <div class="keterangan-box">
+      <img src="img/militer.png" alt="militer Logo" /><br>
+      <i class="bx bx-code"></i>
+      <h3>DATA MILITARY</h3>
+      <p>
+        This website is developed using HTML, CSS, and PHP, and is specifically designed to manage military data in order to assist security .
+        officers in verifying the identity and purpose of individuals who wish to visit their military family members The system allows every visit to be recorded in an organized and systematic manner, making it easier for security personnel to detect whether someone entering the military area has proper authorization. In addition, this platform plays an important role in maintaining the safety of military housing by providing alerts or warnings if an unknown or suspicious person attempts to access the military premises without clear permission.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
+
