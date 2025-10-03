@@ -359,3 +359,44 @@ span{
 }
 
 
+/* ===== Filter Button Style ===== */
+.filter-buttons {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.filter-btn {
+  padding: 10px 18px;
+  margin: 5px;
+  border: none;
+  border-radius: 8px;
+  background-color: #007f73;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.filter-btn:hover {
+  background-color: #005f57;
+  transform: scale(1.05);
+}
+
+.filter-btn.active {
+  background-color: #00413c; /* warna beda buat tombol aktif */
+}
+
+/* animasi muncul project */
+.project-box {
+  display: none;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.project-box.show {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(10px);}
+  to {opacity: 1; transform: translateY(0);}
+}

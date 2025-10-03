@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="index.css">
+  <title>Project-tiketin</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #e6f8f6;
+    }
+
+    .keterangan {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 60px 20px;
+    }
+
+    .keterangan-box {
+      max-width: 900px;
+      background-color: #d1f0ed;
+      border: 2px solid #71c9b9;
+      border-radius: 20px;
+      box-shadow: 0 8px 16px rgba(0, 128, 128, 0.1);
+      padding: 40px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .keterangan-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 24px rgba(0, 128, 128, 0.2);
+    }
+
+    .keterangan-box img {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      border-radius: 16px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .keterangan-box i {
+      font-size: 48px;
+      color: #3fb9a4;
+      margin-bottom: 10px;
+      display: inline-block;
+    }
+
+    .keterangan-box h3 {
+      font-size: 28px;
+      color: #247f73;
+      margin-bottom: 16px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    .keterangan-box p {
+      font-size: 16px;
+      line-height: 1.8;
+      color: #2c4f4c;
+      text-align: justify;
+    }
+  </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#home" class="logo remove-underline-bug">Muhammad Yassir Rajwa</a>
+        <nav class="navbar">
+            <a class="remove-underline-bug" href="index.html">Home</a>
+            <a class="remove-underline-bug" href="index.html#about">About</a>
+            <a class="remove-underline-bug" href="index.html#project">Project</a>
+            <a class="remove-underline-bug" href="index.html#skill">Skill</a>
+            <a class="remove-underline-bug" href="index.html#contact">Contact</a>
+        </nav>
+    </header>
+  <div class="keterangan">
+    <div class="keterangan-box">
+      <img src="img/beda/3.png" alt="TiketinAja Logo" /><br>
+      <i class="bx bx-code"></i>
+      <h3>Coadvy</h3>
+      <p>
+        I developed the Coadvy mobile app project using the Flutter (Dart) framework with the primary goal of creating a highly efficient and responsive coffee ordering experience for users, directly addressing pain points such as long queues during peak hours and slow order processing. As the sole UI/UX Designer and Developer on the project, I focused on designing a flow that minimized friction; my design presented the checkout process in just three short steps and integrated a prominent Order Again feature on the homepage to allow loyal users to reorder their favorites in seconds, effectively cutting transaction times by over 50%. To deliver on the "fast-response" promise, I ensured fast application performance through an optimal implementation of Flutter state management, and most importantly, I integrated a Real-time Chat Support feature that is always accessible on the order status page. This chat interface is designed to be minimalist and includes a quick reply option to make it easy for users to report issues such as delayed orders or incorrect products without having to type extensively.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
