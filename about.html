@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="index.css">
-  <title>Project-tiketin</title>
+  <title>About me</title>
   <style>
     body {
       margin: 0;
@@ -66,19 +66,26 @@
       color: #2c4f4c;
       text-align: justify;
     }
+    
   </style>
 </head>
 <body>
-    <header class="header">
-        <a href="#home" class="logo remove-underline-bug">Muhammad Yassir Rajwa</a>
-        <nav class="navbar">
-            <a class="remove-underline-bug" href="index.html">Home</a>
-            <a class="remove-underline-bug" href="index.html#about">About</a>
-            <a class="remove-underline-bug" href="index.html#project">Project</a>
-            <a class="remove-underline-bug" href="index.html#skill">Skill</a>
-            <a class="remove-underline-bug" href="index.html#contact">Contact</a>
-        </nav>
-    </header>
+     <header class="header">
+    <a href="#home" class="logo remove-underline-bug">Muhammad Yassir Rajwa</a>
+
+    <!-- Tombol Hamburger -->
+    <div class="hamburger" id="hamburger">
+      <i class="bi bi-list"></i>
+    </div>
+
+    <nav class="navbar" id="navbar">
+      <a class="remove-underline-bug" href="index.html">Home</a>
+      <a class="remove-underline-bug" href="index.html.#about">About</a>
+      <a class="remove-underline-bug" href="index.html.#project">Project</a>
+      <a class="remove-underline-bug" href="index.html.#contact">Contact</a>
+    </nav>
+  </header>
+
   <div class="keterangan">
     <div class="keterangan-box">
       <img src="img/yassir3.JPG" alt="TiketinAja Logo" /><br>
@@ -95,5 +102,27 @@
     </div>
   </div>
 </body>
+<footer>
+    <p>&copy; 2025 Muhammad Yassir Rajwa. All rights reserved.</p>
+</footer>
 </html>
+<script>
+    const hamburger = document.getElementById('hamburger');
+  const navbar = document.getElementById('navbar');
+
+  hamburger.addEventListener('click', () => {
+    navbar.classList.toggle('active');
+    hamburger.classList.toggle('open');
+  });
+
+  // Tutup navbar otomatis saat klik link
+  const navLinks = document.querySelectorAll('.navbar a');
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      navbar.classList.remove('active');
+      hamburger.classList.remove('open');
+    });
+  });
+</script>
+
 

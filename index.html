@@ -14,15 +14,23 @@
 
 <body>
   <!-- header code -->
+  <!-- header code -->
   <header class="header">
     <a href="#home" class="logo remove-underline-bug">Muhammad Yassir Rajwa</a>
-    <nav class="navbar">
+
+    <!-- Tombol Hamburger -->
+    <div class="hamburger" id="hamburger">
+      <i class="bi bi-list"></i>
+    </div>
+
+    <nav class="navbar" id="navbar">
       <a class="remove-underline-bug" href="#home">Home</a>
       <a class="remove-underline-bug" href="#about">About</a>
       <a class="remove-underline-bug" href="#project">Project</a>
       <a class="remove-underline-bug" href="#contact">Contact</a>
     </nav>
   </header>
+
   <div id="portfolio-content">
 
     <section class="home" id="home">
@@ -38,7 +46,7 @@
           <a href="https://www.linkedin.com/in/yassir-rajwa-92b152351/"><i class="bi bi-linkedin"></i></a>
           <a href="https://github.com/myassirrajwa"><i class="bi bi-github"></i></a>
         </div>
-        <a href="assets/cvYassir.pdf" download="Muhammad Yassi Rajwa.pdf">
+        <a href="assets/CV_Mhammad_Yassir_Rajwa.pdf" download="Muhammad Yassi Rajwa.pdf">
           <button class="btn" style="margin: 20px;">Download CV</button>
         </a>
       </div>
@@ -66,7 +74,7 @@
         <button class="filter-btn" data-filter="apps">Apps</button>
         <button class="filter-btn" data-filter="ui/ux">UI/UX</button>
 
-        
+
       </div>
 
       <div class="project-container">
@@ -86,8 +94,8 @@
           <a href="datamiliter.html" class="btn">Read More</a>
         </div>
 
-        
-        
+
+
         <div class="project-box apps">
           <img src="img/beda/1.png" alt="">
           <i class="bx bx-code"></i>
@@ -95,7 +103,7 @@
           <p>The HauteView project is a mobile e-commerce app I built using Flutter (Dart),</p>
           <a href="haute.html" class="btn">Read More</a>
         </div>
-        
+
         <div class="project-box apps">
           <img src="img/beda/2.png" alt="">
           <i class="bx bx-code"></i>
@@ -138,7 +146,7 @@
     </section>
   </div>
   <footer>
-    <p>&copy; 2025. Portofolioyassir.</p>
+    <p style="text-align: center;">&copy; 2025. Portofolio Muhammad Yassir Rajwa.</p>
   </footer>
 </body>
 
@@ -165,6 +173,22 @@
           box.style.display = "none"; // sembunyikan
         }
       });
+    });
+  });
+  const hamburger = document.getElementById('hamburger');
+  const navbar = document.getElementById('navbar');
+
+  hamburger.addEventListener('click', () => {
+    navbar.classList.toggle('active');
+    hamburger.classList.toggle('open');
+  });
+
+  // Tutup navbar otomatis saat klik link
+  const navLinks = document.querySelectorAll('.navbar a');
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      navbar.classList.remove('active');
+      hamburger.classList.remove('open');
     });
   });
 </script>
